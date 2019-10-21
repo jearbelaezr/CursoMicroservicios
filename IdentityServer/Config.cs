@@ -11,17 +11,27 @@ namespace IdentityServer
     {
         public static IEnumerable<IdentityResource> Ids =>
             new IdentityResource[]
-            { 
+            {
                 new IdentityResources.OpenId()
             };
 
         public static IEnumerable<ApiResource> Apis =>
-            new ApiResource[] 
-            { };
-        
+            new ApiResource[]
+            { new ApiResource("ApiMTI", "Demo API para MTi")};
+
         public static IEnumerable<Client> Clients =>
-            new Client[] 
-            { };
-        
+            new Client[]
+            { 
+                new Client
+                {
+                    ClientId = "client",
+                    AllowedGrantTypes = GrantTypes.ClientCredentials,
+                    ClientSecrets =
+                    {
+                        new Secret("secret".Sha256())
+                    },
+                    AllowedScopes = { "ApiMTI" }
+                }
+            };
     }
 }
