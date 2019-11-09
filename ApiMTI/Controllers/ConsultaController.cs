@@ -10,7 +10,7 @@ namespace ApiMTI.Controllers
 {
     [ApiController]
     [Route("[controller]")]
-    [Authorize]
+//    [Authorize]
     public class ConsultaController : ControllerBase
     {
         private readonly ILogger<ConsultaController> _logger;
