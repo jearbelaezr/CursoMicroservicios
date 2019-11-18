@@ -1,0 +1,12 @@
+kubectl cluster-info
+kubectl get nodes
+kubectl get pods
+kubectl get pod
+kubectl get rc
+kubectl describe nodes
+kubectl logs <nodo>
+kubectl get deployments
+kubectl run my-nginx --image=nginx --port=80
+
+
+kubectl run dep-ejemploapi --image ejemploapi --port=80

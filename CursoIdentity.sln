@@ -11,7 +11,11 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ApiMTI", "ApiMTI\ApiMTI.csp
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DemoSolid", "DemoSolid\DemoSolid.csproj", "{639A67ED-0AC5-458A-A4AA-0451B3798296}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DemoSPA", "DemoSPA\DemoSPA.csproj", "{D46EE71A-D1EF-4E66-9533-5C54D0DBF600}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DemoSPA", "DemoSPA\DemoSPA.csproj", "{D46EE71A-D1EF-4E66-9533-5C54D0DBF600}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ApiLinux", "ApiLinux\ApiLinux.csproj", "{A6959289-9A8B-4058-A011-5558F1FB94F0}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Recibos", "Recibos\Recibos.csproj", "{A07468E2-CC3E-4ED6-A1AB-AE1032679E1E}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -39,6 +43,14 @@ Global
 		{D46EE71A-D1EF-4E66-9533-5C54D0DBF600}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{D46EE71A-D1EF-4E66-9533-5C54D0DBF600}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{D46EE71A-D1EF-4E66-9533-5C54D0DBF600}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A6959289-9A8B-4058-A011-5558F1FB94F0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A6959289-9A8B-4058-A011-5558F1FB94F0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A6959289-9A8B-4058-A011-5558F1FB94F0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A6959289-9A8B-4058-A011-5558F1FB94F0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A07468E2-CC3E-4ED6-A1AB-AE1032679E1E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A07468E2-CC3E-4ED6-A1AB-AE1032679E1E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A07468E2-CC3E-4ED6-A1AB-AE1032679E1E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A07468E2-CC3E-4ED6-A1AB-AE1032679E1E}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
