@@ -6,7 +6,28 @@ kubectl get rc
 kubectl describe nodes
 kubectl logs <nodo>
 kubectl get deployments
-kubectl run my-nginx --image=nginx --port=80
 
 
-kubectl run dep-ejemploapi --image ejemploapi --port=80
+kubectl run dep-ejemploapi --image=ejemploapi --port=80 --replicas=5
+kubectl run dep-nginx --image=nginx --port=80 --replicas=5
+-----------------
+kubectl delete deployment/dep-ejemploapi
+-----------------
+
+
+kubectl autoscale --min=2 --max=10 deployment/dep-ejemploapi
+kubectl scale --replicas=3 deployment/dep-ejemploapi
+
+kubectl expose deployment dep-ejemploapi --port=80 --name=ejemploapi-http
+
+kubectl rollout 
+
+kubectl get service dep-ejemploapi
+
+kubectl describe service dep-ejemploapi
+
+
+kubectl port-forward service/dep-ejemploapi 4444:80 
+
+kubectl port-forward 
+---
